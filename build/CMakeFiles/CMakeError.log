@@ -1,0 +1,16 @@
+Performing C++ SOURCE FILE Test VAES_SUPPORTED failed with the following output:
+Change Dir: /home/userland/xmrig/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bcd87/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bcd87.dir/build.make CMakeFiles/cmTC_bcd87.dir/build
+gmake[1]: Entering directory '/home/userland/xmrig/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bcd87.dir/src.cxx.o
+/usr/bin/c++ -DVAES_SUPPORTED  -mavx2 -mvaes -o CMakeFiles/cmTC_bcd87.dir/src.cxx.o -c /home/userland/xmrig/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-mavx2'
+c++: error: unrecognized command-line option '-mvaes'
+gmake[1]: *** [CMakeFiles/cmTC_bcd87.dir/build.make:78: CMakeFiles/cmTC_bcd87.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/userland/xmrig/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bcd87/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
